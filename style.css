@@ -1,0 +1,499 @@
+
+header  {
+    width: 100%;
+    height: 30vh;
+    color: #fff;
+    z-index: 990;
+    background: url("images/wolf-wallpaper.jpg") no-repeat 50%;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+.logo {
+    margin-left: 10%;
+    line-height: 30px;
+    position: fixed;
+    float: left;
+    margin: 5px 46px;
+    filter: grayscale();
+}
+.logo:hover {
+    filter: none;
+}
+.MenuTop {
+    height: 80px;
+}
+nav {
+    position: fixed;
+    width: 100%;
+    line-height: 60px;
+}
+nav ul {
+    line-height: 10px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    color: #fff;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    padding-right: 40px;
+    transition: 1s;
+}
+.top-header-nav.black {
+  z-index: 1000;
+}
+nav.black ul {
+    background: black;
+}
+nav ul li {
+    display: inline-block;
+    padding: 16px 40px;;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+nav ul li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.menu-icon {
+    line-height: 60px;
+    width: 100%;
+    background: black;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px 0 24px;
+    cursor: pointer;
+    color: #000;
+    display: none;
+}
+
+.CV {
+    position: relative;
+}
+.Popup {
+    margin-top: -22px;
+    position: absolute;
+    filter: opacity(0.3);
+}
+.Popup:hover {
+    filter: opacity(1);
+    filter: drop-shadow(0.5);
+}
+
+/** LOGO BURGER DU MENU**/
+    .cross-bar {
+    display: inline-block;
+    cursor: pointer;
+}
+    .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+    .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+    .change .bar2 {opacity: 0;}
+  
+    .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+} /** LOGO BURGER DU MENU **/
+
+@media(max-width: 786px) {
+
+    .logo {
+          position: fixed;
+          top: 0;
+          margin-top: 8px;
+          width: 100px;
+          height: 37px;
+    }
+    nav ul {
+          max-height: 0px;
+          background: black;
+          overflow: hidden;
+    }
+    nav.black ul {
+          background: black;
+          padding-top: -50px;
+    }
+    .showing {
+          max-height: 34em;
+    }
+    nav ul li {
+          box-sizing: border-box;
+          width: 100%;
+          padding: 24px;
+          text-align: center;
+    }
+    nav ul li a {
+        font-size: small;
+    }
+    .menu-icon {
+          display: block;
+    }
+}
+/****************** FIN DU HEADER ***********************/
+
+/****************** SECTION PRESENTATION ***********************/
+
+.Pix {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px black solid;
+    margin-top: -60px;
+    opacity: 1;
+    display: block;
+}
+.Presentation h2 {
+    color: #333;
+}
+.Presentation h4 {
+    color: #9a9a9a;
+}
+.Presentation p {
+    color: #66615b;
+}
+.description {
+    width: 80%;
+    margin-left: 10%;
+}
+.cartes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cartes:hover {
+    background-color:#97cbfb5d;
+    border-radius: 10px;
+}
+
+/******************FIN PRESENTATION********************/
+
+/******************SECTION RESEAUX********************/
+
+.Reseaux {
+    background-image: url('https://w.wallhaven.cc/full/0p/wallhaven-0preqj.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.shake:hover {
+    animation: shake 150ms easy-in-out infinite;
+}
+.fab.fa-linkedin-in {
+    font-size: 100px;
+    color: #fff;
+}
+.fab.fa-instagram {
+    font-size: 100px;
+    color: #fff;
+}
+.fab:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+} 
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+/****************** FIN RESEAUX ********************/
+
+/****************** SECTION STAGE ********************/
+
+.stage h2 {
+    color: #333;
+}
+.stage h4 {
+    color: #9a9a9a;
+}
+.stage p {
+    color: #66615b;
+}
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {
+      opacity: 0.8;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+  
+  /* The Modal (background) */
+  .modal {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: scroll; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    margin-top: -100px;
+    display: block;
+    width: 70%;
+    max-width: 520px;
+  }
+  
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  
+  .fas.fa-times-circle {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 60px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  .fas.fa-times-circle:hover {
+      color: #fff;
+  }
+  .close:hover,
+  .close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 30%;
+      max-width: 400px;
+    }
+    .fas.fa-times-circle {
+        font-size: 30px;
+        right: 8px;
+    }
+  }
+
+.stage {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+        @media screen and (min-width: 500px) and (max-width: 995px) {
+            .stage {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+/********************* FIN STAGE ***********************/
+
+/********************* SECTION REALISATIONS ***********************/
+
+.mockupOne, .mockupTwo {
+    position: relative;
+    width: 100%;
+}
+.Mockups {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.mockupOne:hover .Mockups, .mockupTwo:hover .Mockups {
+    opacity: 0.3;
+}
+.mockupOne:hover .middle, .mockupTwo:hover .middle {
+    opacity: 1;
+}
+.text {
+    background: linear-gradient(94deg, #022c58, #246655, #691dff, #607d8b);
+    background-size: 800% 800%;
+    animation: rainbow 4s ease infinite;
+
+    /* background-color: #42414cc7; */
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+@-webkit-keyframes rainbow {
+    0%{background-position:77% 0%}
+    50%{background-position:24% 100%}
+    100%{background-position:77% 0%}
+}
+@keyframes rainbow {
+    0%{background-position:77% 0%}
+    50%{background-position:24% 100%}
+    100%{background-position:77% 0%}
+}
+.text a, .text a:hover {
+    text-decoration: none;
+    color: white;
+}
+            @media screen and (min-width: 500px) and (max-width: 995px) {
+                .text {
+                    font-size: small;
+                }
+            }
+
+/********************* Fin REALISATIONS ***********************/
+
+/********BUTTON BACK TO TOP *********/
+.Picto.Arrow {
+    width: 50px;
+}  
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 45px;
+    z-index: 99;
+    outline: none;
+    background: border-box;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+  }
+  
+  @media(max-width: 576px) {
+
+    #myBtn {
+        width: 30px;
+        height: 30px;
+        bottom: 40px;
+    }
+   
+}/********BUTTON BACK TO TOP FIN *********/
+
+/*************** FOOTER ********************/
+
+footer {
+    width: 100%;
+    min-height: 450px;
+    color: #fff;
+    z-index: 990;
+    background: url("https://w.wallhaven.cc/full/95/wallhaven-95r8p8.jpg") no-repeat 50%;
+    background-size: cover;
+    background-position: center;
+}
+.contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff70;
+    border-radius: 10px;
+    transition: 0.5s linear;
+    margin-top: 20px;
+}
+.contact:hover {
+    background-color: #fff;
+    transition: 0.5s linear;
+}
+.titleContact {
+    color: black;
+}
+.GIF {
+    margin-right: 25px;
+}
+.Mobiliter {
+    font-weight: 700;
+}
+p.hashtag {
+    font-style: oblique;
+    font-weight: 700;
+    color: #00c2ff ;
+    text-align: center;
+}
+
+.fa-heart {
+    color: red;
+    animation: beat 1s infinite alternate;
+    transform-origin: center;
+}
+@keyframes beat{
+	to { transform: scale(1.4); }
+}
+
+
+        @media screen and (min-width: 500px) and (max-width: 785px) {
+            .contact {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        @media screen and (min-width: 500px) and (max-width : 990px) {
+            .titleContact {
+                color: #fff;
+            }
+        }
