@@ -106,40 +106,41 @@ nav ul li a:hover {
     transform: rotate(45deg) translate(-8px, -8px);
 } /** LOGO BURGER DU MENU **/
 
-@media(max-width: 786px) {
+                    @media(max-width: 786px) {
 
-    .logo {
-          position: fixed;
-          top: 0;
-          margin-top: 8px;
-          width: 100px;
-          height: 37px;
-    }
-    nav ul {
-          max-height: 0px;
-          background: black;
-          overflow: hidden;
-    }
-    nav.black ul {
-          background: black;
-          padding-top: -50px;
-    }
-    .showing {
-          max-height: 34em;
-    }
-    nav ul li {
-          box-sizing: border-box;
-          width: 100%;
-          padding: 24px;
-          text-align: center;
-    }
-    nav ul li a {
-        font-size: small;
-    }
-    .menu-icon {
-          display: block;
-    }
-}
+                        .logo {
+                            position: fixed;
+                            top: 0;
+                            margin-top: 8px;
+                            width: 100px;
+                            height: 37px;
+                        }
+                        nav ul {
+                            max-height: 0px;
+                            background: black;
+                            overflow: hidden;
+                        }
+                        nav.black ul {
+                            background: black;
+                            padding-top: -50px;
+                        }
+                        .showing {
+                            max-height: 34em;
+                        }
+                        nav ul li {
+                            box-sizing: border-box;
+                            width: 100%;
+                            padding: 24px;
+                            text-align: center;
+                        }
+                        nav ul li a {
+                            font-size: small;
+                        }
+                        .menu-icon {
+                            display: block;
+                            height: 50px;
+                        }
+                    }
 /****************** FIN DU HEADER ***********************/
 
 /****************** SECTION PRESENTATION ***********************/
@@ -166,6 +167,14 @@ nav ul li a:hover {
     width: 80%;
     margin-left: 10%;
 }
+.Intro {
+    text-align: center;
+}
+                    @media(max-width: 768px) {
+                        .Intro {
+                            text-align: justify;
+                        }
+                    }
 .cartes {
     display: flex;
     flex-direction: column;
@@ -318,16 +327,16 @@ nav ul li a:hover {
   }
   
   /* 100% Image Width on Smaller Screens */
-  @media only screen and (max-width: 700px){
-    .modal-content {
-      width: 30%;
-      max-width: 400px;
-    }
-    .fas.fa-times-circle {
-        font-size: 30px;
-        right: 8px;
-    }
-  }
+            @media only screen and (max-width: 700px){
+                .modal-content {
+                width: 30%;
+                max-width: 400px;
+                }
+                .fas.fa-times-circle {
+                    font-size: 30px;
+                    right: 8px;
+                }
+            }
 
 .stage {
     display: flex;
@@ -335,12 +344,12 @@ nav ul li a:hover {
     align-items: center;
 }
 
-        @media screen and (min-width: 500px) and (max-width: 995px) {
-            .stage {
-                display: flex;
-                flex-direction: column;
+            @media screen and (min-width: 400px) and (max-width: 995px) {
+                .stage {
+                    display: flex;
+                    flex-direction: column;
+                }
             }
-        }
 /********************* FIN STAGE ***********************/
 
 /********************* SECTION REALISATIONS ***********************/
@@ -398,7 +407,7 @@ nav ul li a:hover {
     text-decoration: none;
     color: white;
 }
-            @media screen and (min-width: 500px) and (max-width: 995px) {
+            @media screen and (min-width: 400px) and (max-width: 995px) {
                 .text {
                     font-size: small;
                 }
@@ -432,6 +441,7 @@ nav ul li a:hover {
         width: 30px;
         height: 30px;
         bottom: 40px;
+        right: 64px;
     }
    
 }/********BUTTON BACK TO TOP FIN *********/
@@ -475,6 +485,9 @@ p.hashtag {
     color: #00c2ff ;
     text-align: center;
 }
+.footerBottom {
+    padding-bottom: 10px;
+}
 
 .fa-heart {
     color: red;
@@ -486,13 +499,13 @@ p.hashtag {
 }
 
 
-        @media screen and (min-width: 500px) and (max-width: 785px) {
+        @media screen and (min-width: 400px) and (max-width: 785px) {
             .contact {
                 display: flex;
                 flex-direction: column;
             }
         }
-        @media screen and (min-width: 500px) and (max-width : 990px) {
+        @media screen and (min-width: 400px) and (max-width : 990px) {
             .titleContact {
                 color: #fff;
             }
