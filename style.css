@@ -443,6 +443,9 @@ nav ul li a:hover {
         bottom: 40px;
         right: 64px;
     }
+	.Picto.Arrow {
+		width: 30px;
+	  }
    
 }/********BUTTON BACK TO TOP FIN *********/
 
